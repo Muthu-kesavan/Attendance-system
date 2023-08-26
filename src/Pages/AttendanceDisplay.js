@@ -6,6 +6,13 @@ import Logo from '../assets/logo.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../Styles/AttendanceDisplay.css';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+
+
 
 function AttendanceDisplay() {
     const { id } = useParams();
@@ -55,16 +62,17 @@ export default function Register() {
             toast.error('Username should be greater than 3 characters.', toastOptions);
             return false;
         } else if (email === '') {
-            toast.error('Email is required.', toastOptions);
+            toast.error('Email is required.',toastOptions);
             return false;
-        } else if (regno.length < 15 || regno.length >15) {
-            toast.error('Invalid Register No')
+        } else if ( 15 >regno.length >15) {
+            toast.error('Invalid Register No',toastOptions);
+            return false;
         } else if (subject === '') {
-            toast.error('Please select a subject.', toastOptions);
-        } else if (status === ''){
-            toast.error('please select the status., toastOptions');
-        } 
-        return true;
+            toast.error('Please Enter the subject.',toastOptions);  
+            return false;
+        } else if (status === '') {
+            toast.error('Please select the status.',toastOptions); 
+        } return true;
     };
 
     const handleSubmit = (event) => {
@@ -73,7 +81,7 @@ export default function Register() {
             // You can perform your registration logic here
             // For example, send a request to your server
             // and navigate to a different page upon successful registration
-            navigate('/login'); // Navigate to login page after successful registration
+            navigate('/Thanks'); // Navigate to login page after successful registration
         }
     };
 
@@ -106,12 +114,26 @@ export default function Register() {
                     <input
                         type="subject"
                         placeholder="Enter the Subject"
-                        name="email"
+                        name="subject"
                         onChange={(e) => handleChange(e)}
                     />
+                    <FormControl>
+                        <FormLabel id="demo-radio-buttons-group-label">Status</FormLabel>
+                        <RadioGroup
+                        aria-labelledby="demo-radio-buttons-group-label"
+                        defaultValue="Absent"
+                        name="radio-buttons-group"
+                        >
+                        <FormControlLabel value="Absent" control={<Radio />} label="Absent" />
+                        <FormControlLabel value="Present" control={<Radio />} label="Present" />
+                        </RadioGroup>
+                    </FormControl>
                     
-
-                    <button type="submit">Submit</button>
+                    
+                    
+                    <button type="submit">
+                    <Link to="/Thanks">Submit</Link>
+                    </button>
                     <span>
                         Already have an account ? <Link to="/login">Login.</Link>
                     </span>
@@ -154,7 +176,8 @@ const FormContainer = styled.div`
     }
     input {
         background-color: transparent;
-        padding: 1rem;
+        padding: 1rem  0.1rem;
+        justify-content: center;
         border: 0.1rem solid #4e0eff;
         border-radius: 0.4rem;
         color: white;
@@ -183,7 +206,7 @@ const FormContainer = styled.div`
     button {
         background-color: #21325e;
         color: white;
-        padding: 1rem 2rem ;
+        padding: 1rem 3rem ;
         border: none;
         font-weight: bold;
         cursor: pointer;

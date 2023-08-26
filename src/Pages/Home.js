@@ -6,7 +6,7 @@ function Home() {
     
     <div className="home">
         <div className="home1">
-            <h2>WELCOME TO SRM INSTITUTE</h2>
+            <h2>WELCOME TO SRM UNIVERSITY</h2>
         <div className="prompt">
             <p>Attendance Marking System</p>
             </div>

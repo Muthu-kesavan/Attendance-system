@@ -1,13 +1,22 @@
-import student from "../assets/Image1.jpg";
-import teacher from "../assets/image2.jpg";
-
+import computer from "../assets/computer.jpg";
+import electrical from "../assets/electrical.jpg";
+import mechanical from "../assets/mechanical.jpg";
+import civil from "../assets/civil.jpg";
 export const Attendivisor = [
     {
-        name: "Students",
-        image: student
+        name: "CSE",
+        image: computer
     },
     {
-        name: "Faculties",
-        image: teacher
+        name: "ECE",
+        image: electrical
     },
+    {
+        name: "Mechanical",
+        image: mechanical
+    },
+    {
+        name: "Civil",
+        image: civil
+    }
 ];

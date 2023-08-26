@@ -5,7 +5,7 @@ import "../Styles/Attendance.css"
 function Attendance() {
   return (
     <div className="attendance">
-      <h1>Attendance</h1>
+      <h1>Chose Your Department</h1>
       <div className="attendivisor">
         { Attendivisor.map((attendance, idx) => {
           return(
@@ -14,7 +14,7 @@ function Attendance() {
         })}
       </div>
     </div>
-  )
+  );
 }
 
-export default Attendance
+export default Attendance;

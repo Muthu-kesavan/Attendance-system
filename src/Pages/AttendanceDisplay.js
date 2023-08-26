@@ -64,7 +64,7 @@ export default function Register() {
         } else if (email === '') {
             toast.error('Email is required.',toastOptions);
             return false;
-        } else if ( 15 >regno.length >15) {
+        } else if ( regno.length !== 15) {
             toast.error('Invalid Register No',toastOptions);
             return false;
         } else if (subject === '') {
@@ -131,12 +131,9 @@ export default function Register() {
                     
                     
                     
-                    <button type="submit">
-                    <Link to="/Thanks">Submit</Link>
+                    <button type="submit">Submit
                     </button>
-                    <span>
-                        Already have an account ? <Link to="/login">Login.</Link>
-                    </span>
+                    
                 </form>
             </FormContainer>
             <ToastContainer />

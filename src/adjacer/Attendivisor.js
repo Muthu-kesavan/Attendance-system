@@ -1,5 +1,6 @@
-import student from "../assets/student.jpg";
+import student from "../assets/Image1.jpg";
 import teacher from "../assets/image2.jpg";
+
 export const Attendivisor = [
     {
         name: "For Students",

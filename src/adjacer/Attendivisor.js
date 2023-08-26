@@ -3,11 +3,11 @@ import teacher from "../assets/image2.jpg";
 
 export const Attendivisor = [
     {
-        name: "For Students",
+        name: "Students",
         image: student
     },
     {
-        name: "For Faculties",
+        name: "Faculties",
         image: teacher
     },
 ];

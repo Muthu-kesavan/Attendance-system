@@ -1,0 +1,28 @@
+.attendance {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .attendance h1 {
+    margin-top: 50px;
+    color: #3e497a;
+    font-size: 35px;
+  }
+  .attendance img {
+    width: 700px;
+    border-radius: 10px;
+  }
+  
+  .attendance p {
+    font-size: 40px;
+    color: #3e497a;
+  }
+  
+  .attendance svg {
+    font-size: 60px;
+    color: #3e497a;
+  }

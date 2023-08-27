@@ -6,7 +6,7 @@ function Thanks() {
   return (
     <div className="thanks">
         <img src={Logo} alt="srm logo" />
-        <h1>Your Attendance is Submitted Successfully!!!</h1>
+        <h1>Your Attendance is Submitted Successfully!</h1>
     </div>
   )
 }

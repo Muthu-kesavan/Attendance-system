@@ -1,8 +1,19 @@
 .thanks {
-    display: flex;
     align-items: center;
-    color: white;
-    gap: 1rem;
     justify-content: center;
-
 }
+
+img{
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    height: 15rem;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-family: "Arial", sans-serif;
+        color:#3e497a;
+        gap: 1rem;
+        justify-content: center;
+    }

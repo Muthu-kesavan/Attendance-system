@@ -59,7 +59,7 @@ export default function Register() {
     };
 
     const handleValidation = () => {
-        const { username, email, regno, subject, status } = values;
+        const { username, email, regno } = values;
         if (username.length < 3) {
             toast.error('Username should be greater than 3 characters.', toastOptions);
             return false;
@@ -77,11 +77,8 @@ export default function Register() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (handleValidation()) {
-            // You can perform your registration logic here
-            // For example, send a request to your server
-            // and navigate to a different page upon successful registration
-            navigate('/Thanks'); // Navigate to login page after successful registration
+        if (handleValidation() !== true) {
+             navigate('/Thanks'); 
         }
     };
 
@@ -202,14 +199,15 @@ const FormContainer = styled.div`
     radio-buttons{
         color:white;
     }
+
     select {
         display: flex;
         flex-direction: column;
-        background-color: transparent;
+        background-color: #21325e;
         padding: 1rem;
         border: 0.1rem solid #4e0eff;
         border-radius: 0.4rem;
-        color: white;
+        color:white ;
         width: 100%;
         font-size: 1rem;
         &:focus {
@@ -217,6 +215,7 @@ const FormContainer = styled.div`
             outline: none;
         }
     }
+    
     button {
         background-color: #21325e;
         color: white;

@@ -204,7 +204,7 @@ const FormContainer = styled.div`
         display: flex;
         flex-direction: column;
         background-color: #21325e;
-        padding: 1rem;
+        padding: 1rem  0.1rem;
         border: 0.1rem solid #4e0eff;
         border-radius: 0.4rem;
         color:white ;
@@ -217,9 +217,10 @@ const FormContainer = styled.div`
     }
     
     button {
+        
         background-color: #21325e;
         color: white;
-        padding: 1rem 3rem ;
+        padding: 1rem 8rem ;
         border: none;
         font-weight: bold;
         cursor: pointer;

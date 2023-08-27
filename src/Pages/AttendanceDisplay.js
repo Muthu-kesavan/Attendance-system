@@ -133,7 +133,7 @@ export default function Register() {
                     
                     
                     <FormControl>
-                        <FormLabel id="radio-buttons">Status</FormLabel>
+                        <FormLabel id="radio-buttons"></FormLabel>
                         <RadioGroup
                         aria-labelledby="radio-buttons"
                         defaultValue="Absent"

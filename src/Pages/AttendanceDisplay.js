@@ -44,8 +44,8 @@ export default function Register() {
         email: '',
         regno: '',
         year: '',
-        subject: '',
-        status: '',
+        
+       
     });
 
     useEffect(() => {
@@ -72,8 +72,6 @@ export default function Register() {
         }else if ( regno.length !== 15) {
             toast.error('Invalid Register No',toastOptions);
             return false;
-        } else if (status === '') {
-            toast.error('Please select the status.',toastOptions); 
         } return true;
     };
 
@@ -143,7 +141,6 @@ export default function Register() {
                         <FormControlLabel value="Present" control={<Radio />} label="Present" />
                         </RadioGroup>
                     </FormControl>
-                    
                     <Link to="/Thanks">
                     <button type="submit">Submit</button>
                     </Link>

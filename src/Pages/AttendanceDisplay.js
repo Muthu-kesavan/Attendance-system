@@ -77,7 +77,7 @@ export default function Register() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (handleValidation() !== true) {
+        if (handleValidation()) {
              navigate('/Thanks'); 
         }
     };
@@ -124,9 +124,6 @@ export default function Register() {
                         <option value="3">Database Management</option>
                         <option value="3">Minor Project</option>
                     </Form.Select>
-
-                    
-                    
                     <FormControl>
                         <FormLabel id="radio-buttons"></FormLabel>
                         <RadioGroup
@@ -138,12 +135,12 @@ export default function Register() {
                         <FormControlLabel value="Present" control={<Radio />} label="Present" />
                         </RadioGroup>
                     </FormControl>
-                    <Link to="/Thanks">
-                    <button type="submit">Submit</button>
-                    </Link>
-                    <Routes>
-                        <Route path="/Thanks" element={<submit />} />
-                    </Routes>
+                    <button type="submit" onClick={() => { 
+                        handleValidation();
+                        }} >
+                            SUBMIT
+
+                    </button>
                 </form>
             </FormContainer>
             <ToastContainer />

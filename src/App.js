@@ -3,7 +3,8 @@ import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Attendance from './Pages/Attendance';
 import AttendanceDisplay from './Pages/AttendanceDisplay';
-import Thanks from'./Pages/Thanks';
+import Thanks from './Pages/Thanks';
+
 import Navbar from './Components/Navbar';
 import Footer from'./Components/Footer';
 function App() {

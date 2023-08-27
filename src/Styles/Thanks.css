@@ -1,0 +1,8 @@
+.thanks {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    justify-content: center;
+
+}

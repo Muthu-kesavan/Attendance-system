@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link, Routes, Route } from 'react-router-dom';
 import { Attendivisor } from '../adjacer/Attendivisor';
 import styled from 'styled-components';
 import Logo from '../assets/logo.png';
@@ -133,22 +133,23 @@ export default function Register() {
                     
                     
                     <FormControl>
-                        <FormLabel id="demo-radio-buttons-group-label">Status</FormLabel>
+                        <FormLabel id="radio-buttons">Status</FormLabel>
                         <RadioGroup
-                        aria-labelledby="demo-radio-buttons-group-label"
+                        aria-labelledby="radio-buttons"
                         defaultValue="Absent"
-                        name="radio-buttons-group"
+                        name="radio-buttons"
                         >
                         <FormControlLabel value="Absent" control={<Radio />} label="Absent" />
                         <FormControlLabel value="Present" control={<Radio />} label="Present" />
                         </RadioGroup>
                     </FormControl>
                     
-                    
-                    
-                    <button type="submit">Submit
-                    </button>
-                    
+                    <Link to="/Thanks">
+                    <button type="submit">Submit</button>
+                    </Link>
+                    <Routes>
+                        <Route path="/Thanks" element={<submit />} />
+                    </Routes>
                 </form>
             </FormContainer>
             <ToastContainer />
@@ -157,7 +158,7 @@ export default function Register() {
 }
 
 const FormContainer = styled.div`
-    height: 150vh;
+    height: 115vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -168,6 +169,7 @@ const FormContainer = styled.div`
     .brand {
         display: flex;
         align-items: center;
+        color: white;
         gap: 1rem;
         justify-content: center;
         img {
@@ -199,6 +201,9 @@ const FormContainer = styled.div`
             border: 0.1rem solid #997af0;
             outline: none;
         }
+    }
+    radio-buttons{
+        color:white;
     }
     select {
         display: flex;

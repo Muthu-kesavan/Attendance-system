@@ -2,18 +2,18 @@ This Is the Frontend Attendance Marking Web Application used for students to mar
 
 Home page Of Attendance Marking System Done With Look Like SRM UNIVERSITY.
 
-![Screenshot 2023-08-27 122505](https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/c9adf1fd-834f-4b26-bd41-26fcdc36b8db)
+![Screenshot 2023-08-27 122505](https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/96b4706d-d37f-4858-aed7-a0592996ae75)
 
 Department section where all departments are displayed where you can choose yours
 
-![Screenshot 2023-08-27 124714](https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/50e5fb6c-8cda-4951-ac90-a4a2842ab9d7)
+![Screenshot 2023-08-27 124714](https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/83ef4cfd-824a-40cb-9819-b74127c69e32)
 
 Here Even Authentication is Done For REGISTER NUMBER
 
-![Screenshot 2023-08-27 125041](https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/300e9951-8529-4ea6-8009-5af2c0ac27ba)
+![Screenshot 2023-08-27 125041](https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/aaa68539-41ba-4f1a-9936-e7ace427e7a1)
 
  Even Authentication is Done For Email Address
  
- ![Screenshot 2023-08-27 124917](https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/d3f3b958-90a1-4c99-b4da-757026788bf5)
+![Screenshot 2023-08-27 124917](https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/5126d467-42e7-4680-958e-0517ea4bff9c)
 
  HERE THE AUTHENTICATION MESSAGES  DISPLAYED ARE MADE USING TOASTIFY.

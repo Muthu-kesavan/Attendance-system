@@ -1,11 +1,13 @@
 import React from 'react'
 import '../Styles/Home.css'
+import Logo from '../assets/logo.png';
 
 function Home() {
   return (
     
     <div className="home">
         <div className="home1">
+            <img src={Logo} alt="Srm logo" />
             <h2>WELCOME TO SRM UNIVERSITY</h2>
         <div className="prompt">
             <p>Attendance Marking System</p>

@@ -11,6 +11,8 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
+import Form from 'react-bootstrap/Form';
+
 
 
 
@@ -64,11 +66,11 @@ export default function Register() {
         } else if (email === '') {
             toast.error('Email is required.',toastOptions);
             return false;
-        } else if ( regno.length !== 15) {
-            toast.error('Invalid Register No',toastOptions);
+        } else if (!email.endsWith("srmist.edu.in")){
+            toast.error('Enter a valid SRM Email Address.',toastOptions);
             return false;
-        } else if (subject === '') {
-            toast.error('Please Enter the subject.',toastOptions);  
+        }else if ( regno.length !== 15) {
+            toast.error('Invalid Register No',toastOptions);
             return false;
         } else if (status === '') {
             toast.error('Please select the status.',toastOptions); 
@@ -92,6 +94,7 @@ export default function Register() {
                 <form action="" onSubmit={(event) => handleSubmit(event)}>
                     <div className="brand">
                         <center><img src={Logo} alt="logo" /></center>
+                        <h2>Attendance Portal</h2>
                     </div>
                     <input
                         type="text"
@@ -111,12 +114,24 @@ export default function Register() {
                         name="email"
                         onChange={(e) => handleChange(e)}
                     />
-                    <input
-                        type="subject"
-                        placeholder="Enter the Subject"
-                        name="subject"
-                        onChange={(e) => handleChange(e)}
-                    />
+                    <Form.Select aria-label="Default select example">
+                        <option>Select your Year</option>
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third Year</option>
+                        <option value="4">Fourth year</option>
+                    </Form.Select>
+                    <Form.Select aria-label="Default select example">
+                        <option>Select The Subject</option>
+                        <option value="1">Data Structures</option>
+                        <option value="2">Discrete Mathematics</option>
+                        <option value="3">Operating System</option>
+                        <option value="3">Database Management</option>
+                        <option value="3">Minor Project</option>
+                    </Form.Select>
+
+                    
+                    
                     <FormControl>
                         <FormLabel id="demo-radio-buttons-group-label">Status</FormLabel>
                         <RadioGroup
@@ -142,7 +157,7 @@ export default function Register() {
 }
 
 const FormContainer = styled.div`
-    height: 100vh;
+    height: 150vh;
     width: 100vw;
     display: flex;
     flex-direction: column;

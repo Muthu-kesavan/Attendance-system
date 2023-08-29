@@ -1,4 +1,4 @@
-This Is the Frontend Attendance Marking Web Application used for students to mark their attendance which is done in the style of SRM UNIVERSITY.
+This Is the Frontend Of Attendance Marking Web Application made for KALVIUM Interview Round where in this web-application students can mark their attendance and the UI is made in the style of SRM UNIVERSITY.
 
 Home page Of Attendance Marking System Done With Look Like SRM UNIVERSITY.
 

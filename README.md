@@ -1,4 +1,5 @@
-This Is the Frontend Of Attendance Marking Web Application made for the KALVIUM Interview Process where in this web-application students can mark their attendance and the UI is made in the style of SRM UNIVERSITY.
+This Is the Frontend Of Attendance Marking Web Application made for the KALVIUM Interview Process where in this web-application students can mark their attendance and the user interface is made in the style of SRM UNIVERSITY.
+
 I have also added A Loom video at the end.
 
 Home page Of Attendance Marking System Done With Look Like SRM UNIVERSITY.
@@ -19,7 +20,7 @@ Here Even Authentication is Done For REGISTER NUMBER
 
  HERE THE AUTHENTICATION MESSAGES DISPLAYED ARE MADE USING TOASTIFY.
 
- Also Here Is My Loom Video 
+ Here Is My Loom Video 
  feel free to watch it.
 
  https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/70046c41-94db-4a93-b1d3-d3a74222d1ff

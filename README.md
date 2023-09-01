@@ -17,3 +17,8 @@ Here Even Authentication is Done For REGISTER NUMBER
 ![Screenshot 2023-08-27 124917](https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/5126d467-42e7-4680-958e-0517ea4bff9c)
 
  HERE THE AUTHENTICATION MESSAGES  DISPLAYED ARE MADE USING TOASTIFY.
+
+ Also Here Is My Loom Video 
+ feel free to watch it.
+
+ https://github.com/Muthu-kesavan/Attendance-system/assets/73815261/70046c41-94db-4a93-b1d3-d3a74222d1ff
